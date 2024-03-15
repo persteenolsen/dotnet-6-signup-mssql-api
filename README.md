@@ -3,7 +3,8 @@
 .NET 6.0 - User Registration and Login Tutorial with Example API
 
 # Migration - Initial Create locally towards SQLite
-# Make sure that the connection String points to the SQLite ( locally ) in the "appsettings.Development" 
+
+Make sure that the connection String points to the SQLite ( locally ) in the "appsettings.Development" 
 
 "WebApiDatabase": "Data Source=LocalDatabase.db"
 
