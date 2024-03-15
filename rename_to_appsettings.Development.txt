@@ -1,0 +1,6 @@
+﻿{
+    "ConnectionStrings": { 
+
+       "WebApiDatabase": "Data source=your sql server url;initial catalog=your database name;user id=your username;password=your password"
+    }
+}

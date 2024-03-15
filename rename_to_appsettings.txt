@@ -1,0 +1,14 @@
+﻿{
+    "AppSettings": {
+        "Secret": "THIS IS USED TO SIGN AND VERIFY JWT TOKENS, REPLACE IT WITH YOUR OWN SECRET, IT CAN BE ANY STRING"
+    },
+    "ConnectionStrings": {
+        "WebApiDatabase": "Data source=your sql server url;initial catalog=your database name;user id=your username;password=your password"
+    },
+    "Logging": {
+        "LogLevel": {
+            "Default": "Information",
+            "Microsoft.AspNetCore": "Warning"
+        }
+    }
+}
