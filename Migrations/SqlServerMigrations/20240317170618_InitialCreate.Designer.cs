@@ -11,7 +11,7 @@ using WebApi.Helpers;
 namespace WebApi.Migrations.SqlServerMigrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20240314143844_InitialCreate")]
+    [Migration("20240317170618_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

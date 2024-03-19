@@ -11,10 +11,13 @@ var builder = WebApplication.CreateBuilder(args);
     var env = builder.Environment;
  
     // Use SQL SERVER db in production and sqlite db in development
-    // Note: For now SQLite in both Dev + Prod
+    // Note: Without this code below the MS SQL will be created at 
+    // the remote server when running locally
     //if (env.IsProduction())
+    // MS SQL
     //   services.AddDbContext<DataContext>();
     //else
+    // SQLite
     //    services.AddDbContext<DataContext, SqliteDataContext>();
     
     // Connection String for local SQLite
@@ -22,7 +25,7 @@ var builder = WebApplication.CreateBuilder(args);
     
     // The DB at MS SQL SERVER needs to be created by running the Web API locally with a NEW Migration / Initial Create
     // Migration to MS SQL Server
-     services.AddDbContext<DataContext>();
+    services.AddDbContext<DataContext>();
 
     services.AddCors();
     services.AddControllers();
